@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  font-family: Montserrat;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  width: 600px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  border-radius: 10px;
+  gap: 30px;
+  box-shadow: 2px 2px 8px hsl(228, 12%, 48%);
+}
+
+.information {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.perfumeImg {
+  width: 300px;
+  height: 450px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: Fraunces;
+}
+
+.perfume {
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+button {
+  font-family: Montserrat;
+  font-weight: 700;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  height: 45px;
+  border-radius: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(158, 67%, 18%);
+}
+
+button:active {
+  background-color: white;
+  border: 2px solid hsl(158, 36%, 37%);
+  color: hsl(158, 36%, 37%);
+}
+
+.price {
+  position: relative;
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+  font-family: Fraunces;
+}
+
+.price::after {
+  color: hsl(228, 12%, 48%);
+  position: absolute;
+  content: '$169.99';
+  font-size: 15px;
+  top: 20%;
+  margin-left: 20px;
+  display: inline-block;
+  text-decoration: line-through;
+}
